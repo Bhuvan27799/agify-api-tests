@@ -44,5 +44,3 @@ You should see output indicating scenarios and steps passed.
 ## Notes
 
 -This suite is focused on functional API testing, not the accuracy of Agify’s age predictions.
-
--The project uses ES modules in TypeScript, so ensure Node supports them (v14+).
