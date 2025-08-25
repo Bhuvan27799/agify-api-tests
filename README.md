@@ -1,49 +1,48 @@
-**Agify API Test Automation – Kaluza **
+# Agify API BDD Test Suite
 
-Hi! 👋 I’m Bhuvan Ahuja, and this is my BDD test suite for the Agify API.
+This project contains a **BDD-style automated test suite** for the [Agify API](https://agify.io), which predicts the age of a person based on their name. The tests are written using **TypeScript** and **Cucumber**, focusing on **API functionality**, not UI testing.
 
-The API predicts the likely age for a given name. This test suite demonstrates my API testing skills using Cucumber, TypeScript, and Axios, and covers scenarios like:
+## Features
 
-Valid GET requests
+- Automated **GET requests** for valid and invalid names.  
+- Validates **response status codes** and **data types**.  
+- Tests **error handling** for unsupported parameters and HTTP methods.  
+- Written in **TypeScript** with **Cucumber step definitions**.  
+- Easily extendable for additional API scenarios.
 
-Invalid parameters
+## Prerequisites
 
-Unsupported HTTP methods (POST)
+- **Node.js:** v22.18.0  
+- **NPM:** 10.9.3
 
-Correct status codes and response structure
 
-⚡ The focus here is on functionality, reliability, and automated verification of the API, not the accuracy of predicted ages.
+## Setup Instructions
 
-**How to Run**
-
-Clone the repo and install dependencies:
+**Clone the repository**
 
 git clone https://github.com/Bhuvan27799/agify-api-tests.git
-cd agify-tests
-npm install
+-cd agify-api-tests
 
 
-**Run the tests:**
+**Install dependencies**
 
-npm test
-
-
-You should see an output similar to:
-
-5 scenarios (5 passed)
-16 steps (16 passed)
-
-Notes
-
-All steps handle errors gracefully (e.g., 4xx/5xx responses).
-
-The test suite uses ES Modules, so make sure your environment supports it.
-
-The feature file contains scenarios for valid names, invalid parameters, and unsupported HTTP methods.
+-npm install
 
 
-Contact
+**Run tests**
 
-Bhuvan Ahuja
-📧 bhuvan27799@gmail.com
-📞 0459103713
+-npm test
+
+
+You should see output indicating scenarios and steps passed.
+
+## Project Structure
+
+<img width="332" height="136" alt="image" src="https://github.com/user-attachments/assets/b0372fc6-ddb8-4cb0-9cf0-d2b2539c97bc" />
+
+
+## Notes
+
+-This suite is focused on functional API testing, not the accuracy of Agify’s age predictions.
+
+-The project uses ES modules in TypeScript, so ensure Node supports them (v14+).
