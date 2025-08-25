@@ -1,0 +1,21 @@
+{
+  "name": "agify-tests",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js --import features/step_definitions/**/*.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.2.0",
+    "@types/assert": "^1.5.11",
+    "@types/node": "^24.3.0",
+    "axios": "^1.11.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
